@@ -55,7 +55,7 @@ paddleocr --image_dir ./doc/imgs/11.jpg
 ```
 
 之后可以看到此时识别打印的日志，是位置数组 + 识别内容，表示本地的paddlepaddle + paddleocr已经安装成功
-<img src=/assets/img/2025-8-13-paddleocr.assets/image-20250624222513881.png >
+<img src=/assets/img/2025-8-13-paddleocr.assets/image-20250624222513881.png alt="avatar1"/>
 
 #### 使用paddleLabel去对数据集进行标注，制作训练集
 
@@ -66,14 +66,14 @@ paddleocr --image_dir ./doc/imgs/11.jpg
 python paddleLabel.py
 # 就能进入到下面的界面 就能正常标注了
 ```
-<img src=/assets/img/2025-8-13-paddleocr.assets/image-20250624223622471.png >
+<img src=/assets/img/2025-8-13-paddleocr.assets/image-20250624223622471.png alt="avatar2"/>
 
 对数据都标注完成后之后，需要进行导出两部分（均用于训练）
 
 - 一部分是标签部分
 - 一部分是数据正确值
 - 点击下面即可成功导出，导出的文件路径，是paddlelabel的目录一致，文件名为：dian_ocr
-<img src=/assets/img/2025-8-13-paddleocr.assets/image-20250624223827628.png >
+<img src=/assets/img/2025-8-13-paddleocr.assets/image-20250624223827628.png alt="avatar3"/>
 
 使用下面指令进行分割训练集与验证集
 

@@ -19,18 +19,18 @@ gitee+golang+shell+docker+tls+localtime
 
 #### 到gitee中开启流水线，对仓库的代码进行读取，并且构建产物到远程服务器中
 
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084514791.png />
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084514791.png alt="avatar1"/>
 
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084613400.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084613400.png alt="avatar2"/>
 
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084703272.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084703272.png alt="avatar3"/>
 
 - 点击编辑流水线，进入图形化编辑流水线的界面
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084759182.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084759182.png alt="avatar4"/>
 
 - 配置触发事件，选择当有分支合并到我们的开发分支时，也就是`pull request事件`。之后选择任务编排，我们只需要选择**编译**（对仓库代码执行编译，生成golang可执行文件）跟**部署**（将这个可执行文件通过gitee服务，上传至我们远程的服务器中）
 
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084936321.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403084936321.png alt="avatar5"/>
 
 - ##### 编译 （直接跟着输入即可）
 
@@ -43,7 +43,7 @@ gitee+golang+shell+docker+tls+localtime
 - 暂存构建物：配置构建出来的可执行文件（标识：上下文获取；打包文件目录：去哪里能拿到这个可执行文件）
 
 - 构建缓存：没什么作用，可填入`/go/pkg/mod`
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403085530854.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403085530854.png alt="avatar6"/>
 
 - ##### 部署（将产物部署到哪里？）
 
@@ -51,7 +51,7 @@ gitee+golang+shell+docker+tls+localtime
 
 - 之后选择新的任务，选择主机部署
 
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403090245273.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403090245273.png alt="avatar7"/>
 
 - 随后依次填入
 
@@ -69,9 +69,9 @@ gitee+golang+shell+docker+tls+localtime
   - 将这个构建的产物，推送到远程服务器
   - 添加这个可执行文件的权限
   - 最后使用我们自己写的部署脚本（容器化）
-  - <img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403090716806.png >
+  - <img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403090716806.png alt="avatar8"/>
 
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403090545666.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403090545666.png alt="avatar9"/>
 
 - ##### 到这里gitee的工作就完成了，最终的代码视图：
 
@@ -209,7 +209,7 @@ gitee+golang+shell+docker+tls+localtime
 
 - 再次启动流水线，发现容器能成功运行
 
-<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403093636076.png >
+<img src=/assets/img/2025-8-13-auto-deploy.assets/image-20250403093636076.png alt="avatar10"/>
 
 
 

@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: ailanz # the main title
 
-tagline: 欢迎来到德伦知识库 会不断分享遇到的一些知识点及其难点、思路等 期待与你一起进步 # it will display as the subtitle
+tagline: Welcome to ailanz's Web ! # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.

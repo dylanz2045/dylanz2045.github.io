@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: ailanz # the main title
 
-tagline: Welcome to ailanz's Web ! # it will display as the subtitle
+tagline: Welcome to ailanz's Web It wills be posted some useful articles into it ! # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.

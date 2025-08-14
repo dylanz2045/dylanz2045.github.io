@@ -121,9 +121,9 @@ gitee+golang+shell+docker+tls+localtime
           name: be_deploy
           displayName: be_deploy
           hostGroupID:
-            ID: clubhub
+            ID: ...
             hostID:
-              - d2c36998-d3c5-49d7-b65e-6e5e530c1817
+              - ...
           deployArtifact:
             - source: build
               name: clubhub
